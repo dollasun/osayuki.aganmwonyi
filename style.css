@@ -1,9 +1,188 @@
 /* ================================
 font:     proxima nova 0r lato
 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Fugaz One', cursive;
+font-family: 'Lobster', cursive;
+
 color [body] = #262A30
+body font color = #C7C7C7
 color [button - blue] = #226CE5
 color [button - coral] = #F86F6F
 color [square background] = #101519
 box-shadow - color = rgba (0,0,0 0.62)
 ================================== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #C7C7C7;
+    background-color: #262A30;
+    overflow-x: hidden;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+.main_header{
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+.main_nav{
+    height: 11vh;
+    width: 100vw;
+    box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.6);
+}
+.main_nav_div{
+    height: 11vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 45px;
+    height: auto;
+    transition: all 1s cubic-bezier(.58,-0.48,.47,1.28);
+}
+
+.logo:hover{
+    transform: rotate(18deg);
+}
+
+.nav_link{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    width: 50%;
+}
+
+.list_items{
+    list-style: none;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.3em;
+    transition: all .3s ease-out;
+    cursor: pointer;
+}
+
+.list_items:hover{
+    transform: scale(1.1);
+    color: #226CE5;
+}
+
+.contact{
+    border: 1px solid #226CE5;
+    padding: 0.7em;
+}
+
+
+.landing_text{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    position: relative;
+    top: 4em;
+    padding: 2em;
+    background-color: #101519;
+    box-shadow: 0px 0px 2px 2px rgba(17, 17, 17, 0.5);
+}
+
+
+.landing_h1{
+    font-size: 4em;
+    font-weight: 500;
+}
+
+.landing_h2{
+    font-size: 2em;
+}
+
+.landing_p{
+    padding: 1.5em;
+    font-size: 1.2em;
+    word-spacing: 0.3em;
+    letter-spacing: 0.1em;
+    line-height: 1.8em;
+}
+
+.my_name{
+    font-family: 'Lobster', cursive;
+    color: #C7C7C7;
+    font-size: 1.5em;
+    font-weight: 400;
+    padding: 0.3em;
+    
+}
+
+.social_icon{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+    padding: 1.5em 1em 0 1em;
+}
+
+.social_media_icons{
+    width: 30px;
+    height: auto;
+    transition: all 1s cubic-bezier(.88,-0.49,.19,1.38);
+}
+
+.social_media_icons:hover{
+    transform: rotate(360deg);
+}
+
+.work_icon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 5em;
+    width: 12%;
+    margin: auto;
+    padding: 0.5em;
+    cursor: pointer;
+    color: #226CE5;
+}
+    transition: all .4s cubic-bezier(.7,-0.17,.3,1.06);
+}
+
+.work_icon:hover{
+    transform: scale(1.05);
+    color: #C7C7C7;
+}
+
+.play{
+    width: 22px;
+    height: auto;
+    transition: all .4s cubic-bezier(.7,-0.17,.3,1.06);
+}
+
+.play:hover{
+    transform: translateX(10px);
+}
+
+.view_work{
+    font-weight: 100;
+    font-size: 1em;
+    transition: all .4s cubic-bezier(.7,-0.17,.3,1.06);
+}
+
+.view_work:hover{
+    transform: translateX(-10px);
+    color: #C7C7C7;
+}
