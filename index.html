@@ -8,7 +8,8 @@
     <title>osayuki.aganmwonyi</title>
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lobster|Montserrat:400,500&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -34,7 +35,9 @@
 
         <!-- hero section -->
 
-        <div class="landing container">
+        <div class=" container">
+            <div class="landing">
+
             <div class="landing_text">
                 <h1 class="landing_h1">
                     Hi
@@ -51,6 +54,7 @@
                     <a href=""><img class="social_media_icons" src="images/dribbble@2x.png" alt=""></a>
                 </small>
             </div>
+        </div>
             <div class="work_icon">
                 <img class="play" src="images/play.png" alt="">
                 <p class="view_work">view work</p>
@@ -63,48 +67,70 @@
 
     <!-- portfolio section -->
 
-    <section class="container">
-        <div class="work_section">
-            <div class="project_image_div">
-                <img class="project_images" src="images/project1.png" alt="project image">
-                <img class="project_images" src="images/project2.jpg" alt="project image">
-                <img class="project_images" src="images/project3.png" alt="project image">
-                <img class="project_images" src="images/project4.png" alt="project image">
-            </div>
-            <div class="title_div">
-                <div class="project_title_div">
-                    <div class="project_title one">
-                        <h3>SARA; ai assistant</h3>
-                        <P>UI/UX design and front-end development</P>
+    <section id="work" class="container">
+        <div class="wrapper">
+            <div class="work_section">
+                <div class="project_div">
+                    <img class="project_images" src="images/project1.png" alt="project image">
+                    <div class="project_title_div one">
+                        <div class="project_title">
+                            <h3>SARA; ai assistant</h3>
+                            <P>UI/UX design and front-end development</P>
+                        </div>
                     </div>
                 </div>
-                <div class="project_title_div">
-                    <div class="project_title two">
-                        <h3>CARINE; online fashion store</h3>
-                        <P>UI/UX design and front-end development</P>
+                <div class="project_div">
+                    <img class="project_images" src="images/project2.jpg" alt="project image">
+                    <div class="project_title_div two">
+                        <div class="project_title">
+                            <h3>CARINE; online fashion store</h3>
+                            <P>UI/UX design and front-end development</P>
+                        </div>
                     </div>
                 </div>
-                <div class="project_title_div">
-                    <div class="project_title three">
-                        <h3>NIKE ng; Ecommerce store</h3>
-                        <P>UI/UX design and web app development</P>
+                <div class="project_div">
+                    <img class="project_images" src="images/project3.png" alt="project image">
+                    <div class="project_title_div three">
+                        <div class="project_title">
+                            <h3>NIKE ng; Ecommerce store</h3>
+                            <P>UI/UX design and web app development</P>
+                        </div>
                     </div>
                 </div>
-                <div class="project_title_div">
-                    <div class="project_title four">
-                        <h3>SPOTIFY REDESIGN</h3>
-                        <P>UI/UX design</P>
+                <div class="project_div">
+                    <img class="project_images" src="images/project4.png" alt="project image">
+                    <div class="project_title_div four">
+                        <div class="project_title">
+                            <h3>SPOTIFY REDESIGN</h3>
+                            <P>UI/UX design</P>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="footer_contact">
-            <div class="social_contact"></div>
+            <div class="social_contact">
+                <div class="p_div">
+                    <p>checkout my social media handles for recent projects,
+                        also follow me on all platform</p>
+                </div>
+                <div class="footer_social">
+                    <a href=""><img class="footer_social_media_icons" src="images/github@2x.png" alt=""></a>
+                    <a href=""><img class="footer_social_media_icons" src="images/linkedin@2x.png" alt=""></a>
+                    <a href=""><img class="footer_social_media_icons" src="images/twitter.png" alt=""></a>
+                    <a href=""><img class="footer_social_media_icons" src="images/instagram@2x.png" alt=""></a>
+                    <a href=""><img class="footer_social_media_icons" src="images/dribbble@2x.png" alt=""></a>
+                    </small>
+                </div>
+            </div>
             <div class="mail_contact"></div>
         </div>
     </section>
-    <script src="app.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
