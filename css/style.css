@@ -28,7 +28,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
 }
 
 
@@ -64,12 +64,12 @@ h2 {
 /* :::::::::::::::::individual styles:::::::::::::::: */
 
 #head {
-    height: 11.5vh;
+    height: 80px;
     width: 100vw;
 }
 
 .navigation {
-    height: 11.5vh;
+    height: 80px;
     width: 100vw;
     box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.4);
 }
@@ -116,6 +116,10 @@ h2 {
     margin-top: 2em;
 }
 
+.name {
+    font-weight: 600;
+}
+
 button {
     width: 12em;
     background: #226CE5;
@@ -126,10 +130,10 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover{
-   box-shadow: none;
-   color: #ffffff;
-   background: rgb(12, 74, 173);
+button:hover {
+    box-shadow: none;
+    color: #ffffff;
+    background: rgb(12, 74, 173);
 }
 
 button a {
@@ -221,7 +225,7 @@ button a {
     transition: all .3s ease-in-out;
 }
 
-.btn_left:hover{
+.btn_left:hover {
     color: #ffffff;
     background: rgb(12, 74, 173);
 }
@@ -232,7 +236,7 @@ button a {
     transition: all .3s ease-in-out;
 }
 
-.btn_right:hover{
+.btn_right:hover {
     color: #C7C7C7;
     background: rgb(230, 95, 95);
 }
@@ -286,12 +290,12 @@ button a {
     transition: all .3s ease-in-out;
 }
 
-.arrow{
+.arrow {
     width: 40px !important;
     height: 40px !important;
 }
 
-.mail{
+.mail {
     width: 40px !important;
     height: 40px !important;
 }
@@ -316,7 +320,7 @@ button a {
     background: rgb(230, 95, 95);
 }
 
-.mail_wrapper:hover .arrow{
+.mail_wrapper:hover .arrow {
     transform: translateX(60px);
 }
 
@@ -330,7 +334,7 @@ button a {
     margin: auto;
 }
 
-.mail_wrapper a{
+.mail_wrapper a {
     text-decoration: none;
     color: #fff;
     font-size: .9em;
@@ -348,7 +352,114 @@ button a {
     color: rgba(167, 167, 167, 0.335);
 }
 
+.footer_name {
+    text-transform: capitalize;
+    color: rgba(167, 167, 167, 0.465);
+    font-weight: 700;
+}
 
+
+/* ::::::::::ABOUT SECTION:::::::::::::: */
+
+.profile_image_wrapper {
+    height: 400px;
+    width: 280px;
+    background: #E0D3BD;
+    padding: .5em;
+    margin-top: 3em;
+}
+
+.profile_image_wrapper img {
+    height: 100%;
+    width: 265px;
+    text-align: center;
+}
+
+.profile_text {
+    width: 400px;
+    height: auto;
+    background: #226CE5;
+    color: #C7C7C7;
+    padding: 2em;
+    margin-top: 3em;
+    box-shadow: 0px 0px 8px 4px rgba(0, 0, 0, 0.2);
+}
+
+.profile_text p {
+    padding: 1em;
+}
+
+.profile_flex {
+    padding: 1em;
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* :::::::::::::::::::about section details::::::::::::::: */
+
+.personal_flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_me_wrapper{
+    background: #101519;
+    height: 60px;
+    width: 180px;
+    padding: .8em;
+}
+
+.about_me{
+    padding: .5em .5em .5em 1em;
+    background: #262A30;
+    box-shadow: -10px 0px 3px 0px rgba(0, 0, 0, 0.9);
+    text-align: right;
+}
+
+.text_wrapper{
+    background: #101519;
+    width: 500px;
+    height: auto;
+    padding: 2em;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+
+}
+
+
+
+/* :::::::::::::::::MEDIA QUERIES::::::::::::::: */
+
+@media (max-width:1000px) {
+    .contact_wrapper {
+        justify-content: center
+    }
+
+    .mail_wrapper {
+        margin-top: 4em !important;
+    }
+
+    .profile_text {
+        width: 300px;
+        padding: .5px;
+    }
+
+    .profile_text p {
+        padding: 2.5em;
+    }
+
+}
 
 
 @media (max-width:800px) {
@@ -385,14 +496,26 @@ button a {
     }
 
     .contact_wrapper {
-        justify-content: space-evenly;
+        justify-content: center
     }
 
     .mail_wrapper {
-        margin-top: 4em;
+        margin-top: 4em !important;
     }
 
-
+    .profile_flex {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .personal_flex{
+justify-content: center;
+flex-wrap: wrap;
+    }
+.text_wrapper{
+    margin-top: 1.5em;
+    width: 320px;
+    height: auto;
+}
 
 
 }
