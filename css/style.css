@@ -176,10 +176,8 @@ button a {
 }
 
 .grid_wrapper {
-    margin-top: 2.5em;
     width: 340px;
-    margin: 4em auto 0 auto;
-    margin: 6em auto;
+    margin: 5em auto 0 auto;
     background: #101519;
 }
 
@@ -364,7 +362,6 @@ button a {
 .profile_image_wrapper {
     height: 400px;
     width: 280px;
-    background: #E0D3BD;
     padding: .5em;
     margin-top: 3em;
 }
@@ -428,12 +425,12 @@ button a {
     text-align: right;
 }
 
-.text_wrapper{
+.text2_wrapper{
     background: #101519;
     width: 500px;
     height: auto;
     padding: 2em;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-top: 2em;
 
 }
 
@@ -451,12 +448,11 @@ button a {
     }
 
     .profile_text {
-        width: 300px;
         padding: .5px;
     }
 
     .profile_text p {
-        padding: 2.5em;
+        padding: 2em;
     }
 
 }
@@ -511,10 +507,9 @@ button a {
 justify-content: center;
 flex-wrap: wrap;
     }
-.text_wrapper{
+.text2_wrapper{
     margin-top: 1.5em;
-    width: 320px;
-    height: auto;
+
 }
 
 
@@ -539,6 +534,9 @@ flex-wrap: wrap;
 
     .contact_wrapper {
         justify-content: space-evenly;
+    }
+    .profile_text {
+        width: 100%;
     }
 
 
@@ -569,4 +567,22 @@ flex-wrap: wrap;
         justify-content: space-evenly;
     }
 
+}
+
+/* ::::::::::::::::animations::::::::: */
+.ani{
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in;
+
+}
+.ani_d{
+    animation-delay: 1s;
+}
+
+.delay_3s{
+    animation-delay: 1s;
+}
+
+.ani_a{
+    animation-duration: 1.5s;
 }

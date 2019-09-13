@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lobster|Montserrat:400,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -18,11 +19,11 @@
             <div class="container">
                 <div class="main_nav_div">
                     <a href="index.html">
-                    <div class="logo_div">
-                        <img src="images/logo.png" alt="" class="logo">
-                    </div>
-                </a>
-                        <a href="about.html" class="about_P">Profile</a>
+                        <div class="logo_div">
+                            <img src="images/logo.png" alt="" class="logo">
+                        </div>
+                    </a>
+                    <a href="about.html" class="about_P">Profile</a>
                 </div>
             </div>
         </nav>
@@ -30,15 +31,15 @@
     <section class="hero_section" id="hero">
         <div class="container">
             <div class="hero_wrapper">
-                <div class="p_wrapper">
-                    <p class="welcome_text">
+                <div class="p_wrapper animated fadeIn ani">
+                    <p class="welcome_text ">
                         I'm <span class="name">OSAYUKI AGANMWONYI,</span>
                         I'm a self-taught UI/UX designer and front-end web developer who is
                         passionate about Visualizing engaging interactive
                         experiences and committed to bringing them to live to meet users expectations.
                     </p>
                 </div>
-                <div class="button_wrapper">
+                <div class="button_wrapper animated fadeIn ani .ani_d">
                     <button class="contact.">
                         <a href="#">
                             <p class="contact_p">Get intouch</p>
@@ -51,14 +52,14 @@
     </section>
     <section id="projects">
         <div class="container">
-            <div class="project_header_wrapper">
+            <div class="project_header_wrapper" data-aos="fade-up">
                 <h2 class="project_header">
                     Projects
                 </h2>
             </div>
             <div class="project_wrapper">
                 <div class="grid">
-                    <div class="grid_wrapper">
+                    <div class="grid_wrapper" data-aos="fade-right">
                         <div class="img_div">
                             <img src="images/project1.png" alt="" class="img">
                         </div>
@@ -71,7 +72,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid_wrapper">
+                    <div class="grid_wrapper" data-aos="fade-left">
                         <div class="img_div">
                             <img src="images/project2.jpg" alt="" class="img">
                         </div>
@@ -84,7 +85,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid_wrapper">
+                    <div class="grid_wrapper" data-aos="fade-right">
                         <div class="img_div">
                             <img src="images/project3.png" alt="" class="img">
                         </div>
@@ -97,7 +98,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="grid_wrapper">
+                    <div class="grid_wrapper" data-aos="fade-left">
                         <div class="img_div">
                             <img src="images/project4.png" alt="" class="img">
                         </div>
@@ -117,11 +118,11 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2 class="contact_header">
+            <h2 class="contact_header" data-aos="fade-up">
                 Contact
             </h2>
             <div class="contact_wrapper">
-                <div class="social_media_wrapper">
+                <div class="social_media_wrapper" data-aos="fade-right">
                     <div class="social_p_wrapper">
                         <p class="social_p">
                             checkout my social media handles for recent projects, all feel free to follow me on all
@@ -135,16 +136,16 @@
                         <a href=""><img class="icon" src="images/dribbble.png" alt=""></a>
                     </div>
                 </div>
-                <div class="mail_wrapper">
+                <div class="mail_wrapper" data-aos="fade-left">
                     <a href="#">
-                    <div class="contact_p_wrapper">
-                        <p class="contact_p">Send me a direct mail now</p>
-                    </div>
-                    <div class="contact_icons">
-                        <img src="images/arrow.png" alt="" class="arrow">
-                        <img src="images/message.png" alt="" class="mail">
-                    </div>
-                </a>
+                        <div class="contact_p_wrapper">
+                            <p class="contact_p">Send me a direct mail now</p>
+                        </div>
+                        <div class="contact_icons">
+                            <img src="images/arrow.png" alt="" class="arrow">
+                            <img src="images/message.png" alt="" class="mail">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -157,8 +158,13 @@
         </div>
     </footer>
     <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
         new WOW().init();
+        AOS.init({
+            offset:300,
+            duration:1100
+        });
     </script>
     <script src="js/app.js"></script>
 </body>

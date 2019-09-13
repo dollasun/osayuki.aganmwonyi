@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Fugaz+One|Lobster|Montserrat:400,500&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -29,19 +30,19 @@
     </header>
     <section class="profile">
         <div class="container">
-                <div class="project_header_wrapper">
-                        <h2 class="project_header">
-                            Profile
-                        </h2>
-                    </div>
+            <div class="project_header_wrapper animated fadeInUp" data-aos="fade-up">
+                <h2 class="project_header">
+                    Profile
+                </h2>
+            </div>
             <div class="profile_flex">
-                <div class="profile_image_wrapper">
+                <div class="profile_image_wrapper animated slideInLeft" data-aos="fade-right">
                     <img src="images/profile.jpg" alt="">
                 </div>
-                <div class="profile_text">
+                <div class="profile_text wow slideInRight ani_a" data-aos="fade-left">
                     <p>
                         I'm passionate about Visualizing engaging interactive experiences
-                         and committed to bringing them to live to meet users expectations.
+                        and committed to bringing them to live to meet users expectations.
                     </p>
                 </div>
             </div>
@@ -49,10 +50,10 @@
         <section class="personal_details">
             <div class="container">
                 <div class="personal_flex">
-                    <div class="about_me_wrapper">
+                    <div class="about_me_wrapper" data-aos="fade-right">
                         <h4 class="about_me">About me</h4>
                     </div>
-                    <div class="text_wrapper">
+                    <div class="text2_wrapper" data-aos="fade-left">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam deleniti ducimus vero
                             qui eaque veritatis consectetur, doloremque accusamus, inventore animi velit, quas
                             blanditiis nostrum fuga quae culpa illo nemo tenetur. Lorem ipsum, dolor sit amet
@@ -61,10 +62,10 @@
                     </div>
                 </div>
                 <div class="personal_flex">
-                    <div class="about_me_wrapper">
+                    <div class="about_me_wrapper" data-aos="fade-right">
                         <h4 class="about_me">Education</h4>
                     </div>
-                    <div class="text_wrapper">
+                    <div class="text2_wrapper" data-aos="fade-left">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam deleniti ducimus vero
                             qui eaque veritatis consectetur, doloremque accusamus, inventore animi velit, quas
                             blanditiis nostrum fuga quae culpa illo nemo tenetur. Lorem ipsum, dolor sit amet
@@ -72,27 +73,27 @@
                     </div>
                 </div>
                 <div class="personal_flex">
-                    <div class="about_me_wrapper">
+                    <div class="about_me_wrapper" data-aos="fade-right">
                         <h4 class="about_me">Experience</h4>
                     </div>
-                    <div class="text_wrapper">
+                    <div class="text2_wrapper" data-aos="fade-left">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam deleniti ducimus vero
                             qui eaque veritatis consectetur, doloremque accusamus, inventore animi velit, quas
                             blanditiis nostrum fuga quae culpa illo nemo tenetur. Lorem ipsum, dolor sit amet
                             consectetur
                             adipisicing elit. Ullam deleniti ducimus vero qui eaque veritatis conse. Lorem ipsum dolor
-                             sit amet consectetur adipisicing elit. Explicabo architecto fugiat
-                             earum corporis excepturi accusamus, dolorum inventore! Aspernatur, vitae enim!</p>
+                            sit amet consectetur adipisicing elit. Explicabo architecto fugiat
+                            earum corporis excepturi accusamus, dolorum inventore! Aspernatur, vitae enim!</p>
                     </div>
                 </div>
                 <div class="personal_flex">
-                    <div class="about_me_wrapper">
+                    <div class="about_me_wrapper" data-aos="fade-right">
                         <h4 class="about_me">Tools</h4>
                     </div>
-                    <div class="text_wrapper">
+                    <div class="text2_wrapper" data-aos="fade-left">
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam deleniti ducimus vero
                             qui eaque veritatis consectetur, doloremque accusamus, inventore animi velit, quas
-                           </p>
+                        </p>
                     </div>
                 </div>
             </div>
@@ -102,11 +103,11 @@
     </section>
     <section id="contact">
         <div class="container">
-            <h2 class="contact_header">
+            <h2 class="contact_header" data-aos="fade-up">
                 Contact
             </h2>
             <div class="contact_wrapper">
-                <div class="social_media_wrapper">
+                <div class="social_media_wrapper" data-aos="fade-right">
                     <div class="social_p_wrapper">
                         <p class="social_p">
                             checkout my social media handles for recent projects, all feel free to follow me on all
@@ -120,7 +121,7 @@
                         <a href=""><img class="icon" src="images/dribbble.png" alt=""></a>
                     </div>
                 </div>
-                <div class="mail_wrapper">
+                <div class="mail_wrapper" data-aos="fade-left">
                     <a href="#">
                         <div class="contact_p_wrapper">
                             <p class="contact_p">Send me a direct mail now</p>
@@ -142,8 +143,13 @@
         </div>
     </footer>
     <script src="js/wow.min.js"></script>
+    <script src="js/aos.js"></script>
     <script>
         new WOW().init();
+        AOS.init({
+            offset:200,
+            duration:1100
+        });
     </script>
     <script src="js/app.js"></script>
 </body>
