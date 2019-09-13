@@ -19,6 +19,7 @@ box-shadow - color = rgba (0,0,0 0.62)
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden !important;
 }
 
 body {
@@ -361,15 +362,16 @@ button a {
 
 .profile_image_wrapper {
     height: 400px;
-    width: 280px;
+    width: 300px;
     padding: .5em;
     margin-top: 3em;
+    overflow-y: hidden !important;
 }
 
 .profile_image_wrapper img {
     height: 100%;
-    width: 265px;
-    text-align: center;
+    width: 300px;
+    overflow-y: hidden !important;
 }
 
 .profile_text {
